@@ -1,2 +1,3 @@
-const item = document.querySelectorAll('ul#categories .item');
-item.forEach(item => console.log(item));
+const elem = document.querySelectorAll(".item h2")
+.forEach(el => console.log(`Категория: ${el.textContent}, Количество элементов:
+ ${el.nextElementSibling.children.length}`))
